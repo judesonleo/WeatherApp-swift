@@ -10,7 +10,7 @@
 		FB87744528F2FF6F00D6847B /* Weather-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87744428F2FF6F00D6847B /* Weather-1.swift */; };
 		FB87744728F3000300D6847B /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87744628F3000300D6847B /* DailyForecast.swift */; };
 		FB87744928F3014600D6847B /* TenDayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87744828F3014600D6847B /* TenDayWeatherView.swift */; };
-		FB87744B28F301FD00D6847B /* CurrentCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87744A28F301FD00D6847B /* CurrentCity.swift */; };
+		FB87744B28F301FD00D6847B /* CurrentCityTempAtmosImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87744A28F301FD00D6847B /* CurrentCityTempAtmosImage.swift */; };
 		FB87744D28F30BCA00D6847B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87744C28F30BCA00D6847B /* HomePage.swift */; };
 		FB87744F28F30C9C00D6847B /* BrowsePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87744E28F30C9C00D6847B /* BrowsePage.swift */; };
 		FB87745128F30CB600D6847B /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87745028F30CB600D6847B /* SettingsPage.swift */; };
@@ -45,7 +45,7 @@
 		FB87744428F2FF6F00D6847B /* Weather-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weather-1.swift"; sourceTree = "<group>"; };
 		FB87744628F3000300D6847B /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
 		FB87744828F3014600D6847B /* TenDayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenDayWeatherView.swift; sourceTree = "<group>"; };
-		FB87744A28F301FD00D6847B /* CurrentCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCity.swift; sourceTree = "<group>"; };
+		FB87744A28F301FD00D6847B /* CurrentCityTempAtmosImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCityTempAtmosImage.swift; sourceTree = "<group>"; };
 		FB87744C28F30BCA00D6847B /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		FB87744E28F30C9C00D6847B /* BrowsePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePage.swift; sourceTree = "<group>"; };
 		FB87745028F30CB600D6847B /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
@@ -87,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB82123828F4469100F75147 /* 3-Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				FB87745028F30CB600D6847B /* SettingsPage.swift */,
+				FB87744C28F30BCA00D6847B /* HomePage.swift */,
+				FB87744E28F30C9C00D6847B /* BrowsePage.swift */,
+			);
+			path = "3-Tabs";
+			sourceTree = "<group>";
+		};
 		FBE492BD28D1FED000B4C68C = {
 			isa = PBXGroup;
 			children = (
@@ -112,16 +122,14 @@
 			children = (
 				FBE492C928D1FED000B4C68C /* SwiftUI_WeatherAppApp.swift */,
 				FBE492CB28D1FED000B4C68C /* ContentView.swift */,
-				FBE492CF28D1FED500B4C68C /* Preview Content */,
 				FB87744428F2FF6F00D6847B /* Weather-1.swift */,
-				FB87744C28F30BCA00D6847B /* HomePage.swift */,
-				FB87744628F3000300D6847B /* DailyForecast.swift */,
+				FB82123828F4469100F75147 /* 3-Tabs */,
 				FBEDD51728F43E6E004E0BF5 /* Rickroll.mp4 */,
-				FB87744A28F301FD00D6847B /* CurrentCity.swift */,
+				FB87744628F3000300D6847B /* DailyForecast.swift */,
+				FB87744A28F301FD00D6847B /* CurrentCityTempAtmosImage.swift */,
 				FB87744828F3014600D6847B /* TenDayWeatherView.swift */,
 				FBE492CD28D1FED500B4C68C /* Assets.xcassets */,
-				FB87744E28F30C9C00D6847B /* BrowsePage.swift */,
-				FB87745028F30CB600D6847B /* SettingsPage.swift */,
+				FBE492CF28D1FED500B4C68C /* Preview Content */,
 			);
 			path = "SwiftUI-WeatherApp";
 			sourceTree = "<group>";
@@ -283,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB87745128F30CB600D6847B /* SettingsPage.swift in Sources */,
-				FB87744B28F301FD00D6847B /* CurrentCity.swift in Sources */,
+				FB87744B28F301FD00D6847B /* CurrentCityTempAtmosImage.swift in Sources */,
 				FB87744728F3000300D6847B /* DailyForecast.swift in Sources */,
 				FB87744F28F30C9C00D6847B /* BrowsePage.swift in Sources */,
 				FBE492CC28D1FED000B4C68C /* ContentView.swift in Sources */,
