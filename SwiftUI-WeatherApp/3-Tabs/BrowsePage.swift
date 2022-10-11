@@ -9,8 +9,14 @@ import SwiftUI
 
 
 struct BrowseView: View {
+    
+
+    
+    var Cityname = ["Bengaluru","Delhi","Mumbai"]
+    var Temperature = [25,33,22]
     @State var searchtext = ""
     var body: some View {
+        
         NavigationView{
            
             ZStack{
@@ -24,14 +30,14 @@ struct BrowseView: View {
                         
                         ForEach(0..<3){ index in
                             ZStack{
-                                LinearGradient(colors: [Color.pink,.purple,Color("greyyy")], startPoint: .topTrailing, endPoint: .bottomLeading)
+                                LinearGradient(gradient: .init(colors: [.blue,.accentColor,.indigo,.cyan]), startPoint: .topLeading, endPoint: .bottom)
                                 VStack{
-                                    Text("Bengaluru")
+                                    Text(Cityname[index])
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 27))
                                         .padding(.top,15)
                                         .padding(.trailing,220)
-                                    Text("20°")
+                                    Text("\(Temperature[index])°")
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 40))
                                         .padding(.top,-47)
@@ -63,13 +69,7 @@ struct BrowseView: View {
             }.searchable(text: $searchtext)
                 .foregroundColor(.white)
                 .navigationTitle("Weather")
-                .tabItem{
-                    
-                    Image(systemName:"magnifyingglass.circle.fill")
-                        .renderingMode(.original)
-                        
-                    Text("Browse")
-                }
+                
         }
         
         

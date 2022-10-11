@@ -14,15 +14,20 @@ struct SettingsView: View {
 
     
     @State private var player = AVPlayer()
+    
+    var playeritem = AVPlayer(url: Bundle.main.url(forResource: "Rickroll", withExtension: "mp4")!)
     var body: some View {
         ZStack(){
+            NavigationView{
+                VideoPlayer(player: playeritem)
+                    .edgesIgnoringSafeArea(.all)
+                    .onAppear(
+                        perform: playeritem.play)
+         
+                    
+            }
             
-            VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "Rickroll", withExtension: "mp4")!))
-                .edgesIgnoringSafeArea(.all)
                 
-                .onAppear{
-                    player.play()
-                }
             
             
             
@@ -34,3 +39,5 @@ struct SettingsView: View {
             }
     }
 }
+
+

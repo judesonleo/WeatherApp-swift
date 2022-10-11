@@ -10,6 +10,8 @@ import SwiftUI
 struct HomePageView: View {
     
     var Cityname = ["Bengaluru","Delhi","Mumbai"]
+    var Atmossss = ["Mostly Cloudy","Sunny","Rainy"]
+    var WeatherImage = ["cloud.sun.fill", "sun.max.fill","cloud.heavyrain.fill"]
     var Temperature = [25,33,22]
     
     
@@ -21,11 +23,10 @@ struct HomePageView: View {
             .edgesIgnoringSafeArea(.all)
             VStack{
                 TabView{
-                    DifferentCityView(City: Cityname[0], Temp: 25, Atmos: "Mostly Cloudy",AtomsImage: "cloud.sun.fill")
-                    
-                    DifferentCityView(City: Cityname[1], Temp: 33, Atmos: "Sunny",AtomsImage: "sun.max.fill")
-                    DifferentCityView(City: Cityname[2], Temp: 22, Atmos: "Rainy",AtomsImage: "cloud.heavyrain.fill")
-                    
+                    ForEach(0..<3){ i in
+                    DifferentCityView(City: Cityname[i], Temp: Temperature[i], Atmos: Atmossss[i],AtomsImage: WeatherImage[i])
+                        
+                }
                 }.tabViewStyle(.page(indexDisplayMode: .always))
                     .indexViewStyle(.page(backgroundDisplayMode: .always))
             }

@@ -18,12 +18,12 @@ struct WeatherTenDayView: View {
                 
                 .foregroundColor(.white)
                 
-            
+
             Image(systemName: image)
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio( contentMode: .fit)
-                .frame(width: 50, height: 50)
+                .frame(width: 50, height: 50,alignment: .centerLastTextBaseline)
             Text("\(temp)°")
                 .font(.system(size: 20, weight: .light, design: .serif))
                 .foregroundColor(.white)

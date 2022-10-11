@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
     
@@ -19,6 +20,13 @@ struct ContentView: View {
            
             HomePageView()
             BrowseView()
+                .tabItem{
+                    
+                    Image(systemName:"magnifyingglass.circle.fill")
+                        .renderingMode(.original)
+                        
+                    Text("Browse")
+                }
             SettingsView()
             
             
