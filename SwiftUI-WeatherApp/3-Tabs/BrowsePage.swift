@@ -10,9 +10,12 @@ import SwiftUI
 
 struct BrowseView: View {
     
-
-    
+  
+   
+   
     var Cityname = ["Bengaluru","Delhi","Mumbai"]
+    var CityAtmos = ["Mostly Cloudy" ]
+
     var Temperature = [25,33,22]
     @State var searchtext = ""
     var body: some View {
@@ -30,13 +33,17 @@ struct BrowseView: View {
                         
                         ForEach(0..<3){ index in
                             ZStack{
-                                LinearGradient(gradient: .init(colors: [.blue,.accentColor,.indigo,.cyan]), startPoint: .topLeading, endPoint: .bottom)
+                                Color(hue: 0.58, saturation: 0.85, brightness: 0.75, opacity: 0.709)
                                 VStack{
                                     Text(Cityname[index])
+                                        
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 27))
                                         .padding(.top,15)
                                         .padding(.trailing,220)
+                                        
+                                        
+                                        
                                     Text("\(Temperature[index])°")
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 40))
@@ -59,7 +66,7 @@ struct BrowseView: View {
                                    
                                 }
                             }
-                                .frame(width: 360,height: 200)
+                            .frame(width: 360,height: 200)
                                 .cornerRadius(20)
                         }
                     }
